@@ -55,6 +55,9 @@ Antes de começar, você precisará ter instalado em sua máquina:
     ```
  4. Acesse no navegador: `http://localhost:5173`
 
+**3. Com Docker**
+Você também pode executá-lo usando o Docker com o comando `docker-compose up -d`
+
 ### 💡 Diferenciais Implementados
  1. **Offline-First:** A aplicação funciona sem conexão à internet. As tarefas são salvas localmente via IndexedDB e sincronizadas automaticamente quando a conexão é restabelecida. (para testar o uso `npm run build && npm run preview`
  2. **Sincronização Inteligente:** Utilização de ExternalId (UUID) e carimbos de data/hora (UpdatedAt) no backend para garantir a integridade dos dados durante a sincronização de múltiplos dispositivos.
