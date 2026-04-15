@@ -1,0 +1,28 @@
+## --- Visual Studio & .NET Core ---
+bin/
+obj/
+.vs/
+.vscode/
+
+## --- Bases de Datos Locales ---
+# Ignora el archivo SQLite que veo en tu captura
+*.db
+*.db-shm
+*.db-wal
+
+## --- Configuraciones de Usuario y Secretos ---
+# Ignora configuraciones específicas de desarrollo que puedan tener credenciales
+appsettings.Development.json
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## --- Publicación y Paquetes ---
+.nx/
+.cache/
+nupkg/
+# Paquetes NuGet
+packages/
+# Archivos de depuración
+*.pdb
