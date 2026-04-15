@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: ./TodoListApi
+      dockerfile: Dockerfile
+    ports:
+      - "5170:80" # Mapea el puerto local 5170 al 80 del contenedor
+    volumes:
+      - ./TodoListApi/todo.db:/app/todo.db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  frontend:
+    build:
+      context: ./TodoListReact
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80" # Mapea el puerto local 5173 al 80 del contenedor (Nginx)
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://localhost:5170/api
