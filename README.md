@@ -38,7 +38,7 @@ Antes de começar, você precisará ter instalado em sua máquina:
       dotnet run
     ```
 
- A API estará disponível por padrão em `https://localhost:5170/api`. Você pode acessar a interface do Swagger para testes em `https://localhost:7000/swagger`.
+ A API estará disponível por padrão em `https://localhost:5170/api`. Você pode acessar a interface do Swagger para testes em `https://localhost:5170/swagger`.
 
 **2. Configuração do Frontend**
  1. Entre na pasta do projeto web:
